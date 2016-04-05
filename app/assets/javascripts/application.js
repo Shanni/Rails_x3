@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// welcome page
+var st = new SplitText('.text', {type: 'words, chars'});
+
+// Animate each character
+TweenMax.staggerFrom(st.chars, 0.8, {y: -60, opacity: 0, ease:Back.easeOut}, 0.02, resetChars);
+
+// Fade in each word
+//TweenMax.staggerFrom(st.words, 1.2, {opacity:0, ease:Linear.easeNone}, 0.04, resetChars);
+
+function resetChars() {
+  st.revert();
+}

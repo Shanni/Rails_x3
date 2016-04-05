@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* welcome page
+*/
+ .scene {
+  width: 880px;
+  font-size: 24px;
+}
